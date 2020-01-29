@@ -31,5 +31,7 @@ public class OpenTasksPage
 	public void clickOnSettingsLink()
 	{
 		settingsLink.click();
+		log.info("----------clicked on Settings link-----------");
+
 	}
 }

@@ -12,7 +12,7 @@ import com.actitime.webpages.OpenTasksPage;
 
 
 
-public class CreateBill
+public class CreateBill extends Baseclass
 {
 	@Test
 public void testCreateBill() throws EncryptedDocumentException, IOException
@@ -26,11 +26,11 @@ public void testCreateBill() throws EncryptedDocumentException, IOException
 		AddNewBillingTypePage anbp=new AddNewBillingTypePage();
 		anbp.enterBillingTypename(billname);
 		anbp.clickOnCreatebillingTypebutton();
-		String s=btp.retrieveSucessMessage();
-		System.out.println(s);
-		ExcelUtility.writeData("Sheet3", 1, 2, s);
+		String act=btp.retrieveSucessMessage();
+		System.out.println(act);
+		ExcelUtility.writeData("Sheet3", 1, 2, act);
 
-		if(exp.equals(s))
+		if(exp.equals(act))
 	      {
 			ExcelUtility.writeData("Sheet3", 1, 3, "pass");
 
