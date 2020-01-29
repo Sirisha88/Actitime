@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 52.64 s <<< FAILURE! - in TestSuite
+com.actitime.testscripts.CreateProject.testCreateProject  Time elapsed: 2.848 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.actitime.testscripts.CreateProject.testCreateProject(CreateProject.java:36)
+
